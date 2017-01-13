@@ -41,7 +41,7 @@ namespace Esercitazione
             this.anni = anni;
         }
 
-        public string describe();
+        public string describe()
         {
            string output = "Nome: " + nome + "\r\n";
            output += "Cognome: " + cognome + "\r\n";
