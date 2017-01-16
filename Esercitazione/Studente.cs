@@ -19,5 +19,10 @@ namespace Esercitazione
         {
             return base.describe() + "\r\n" + "Sezione: " + sezione;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + " " + sezione;
+        }
     }
 }

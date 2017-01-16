@@ -30,7 +30,7 @@ namespace Esercitazione
         {
             get
             {
-                return nome + cognome + anni;
+                return nome + cognome + anni.ToString();
             }
         }
 
@@ -43,11 +43,15 @@ namespace Esercitazione
 
         public virtual string describe()
         {
-           string output = "Nome: " + nome + "\r\n";
-           output += "Cognome: " + cognome + "\r\n";
-           output += "Età: " + anni;
+            return
+               "Nome: " + nome + "\r\n" +                      //   \r\n = System.Environment.NewLine
+               "Cognome: " + cognome + "\r\n" +
+               "Età: " + anni;
+        }
 
-           return output;
+        public override string ToString()
+        {
+            return nome + " " + cognome;
         }
     }
 }
